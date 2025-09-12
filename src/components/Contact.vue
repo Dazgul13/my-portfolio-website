@@ -61,7 +61,13 @@
             <button type="submit" class="btn btn-primary w-100">
               {{ isLoading ? "Sending..." : "Send Message" }}
             </button>
+            <div class="d-flex justify-content-end mt-2">
+    <div ref="recaptchaContainer">
+    </div>
+  </div>
+
           </form>
+
         </div>
       </div>
     </div>
