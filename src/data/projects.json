@@ -66,11 +66,11 @@
     },
     {
         "id": 9,
-        "title": "WIP",
-        "description": "This project is a work in progress comeback another time to view the finished project",
+        "title": "Static HTML Coffee Roasters Page",
+        "description": "TThe Coffee Roasters Page is a beautifully designed web page dedicated to showcasing a coffee roasting business. It highlights the company’s story, roasting process, product offerings, and commitment to quality, providing visitors with an engaging and informative experience.",
         "image": "/images/myProjects/9_project.svg",
-        "github": "",
-        "demo": ""
+        "github": "https://github.com/Dazgul13/conyocoffeeroasters",
+        "demo": "https://dazgul13.github.io/conyocoffeeroasters/"
     },
     {
         "id": 10,
