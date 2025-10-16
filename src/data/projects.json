@@ -46,7 +46,7 @@
         "description": "The Job Tracker App Client Demo showcases an intuitive and user-friendly interface designed to help job seekers efficiently manage their job applications in one centralized platform. This demo provides a hands-on experience of the core features and workflows available in the full application.",
         "image": "/images/myProjects/JobAPP.jpg",
         "github": "https://github.com/Dazgul13/job-tracker-client",
-        "demo": "https://blog-app-client-black-omega.vercel.app/"
+        "demo": "https://job-tracker-client-git-master-dazguls-projects.vercel.app/"
     },
     {
         "id": 7,
@@ -62,7 +62,7 @@
         "description": "The Blog App Client Demo provides an interactive preview of a modern blogging platform’s frontend interface, designed for both readers and content creators. This demo highlights the app’s usability, design, and core features.",
         "image": "/images/myProjects/8_project.svg",
         "github": "https://github.com/Dazgul13/blog-app-client",
-        "demo": "https://blog-app-client-eh87ysd9n-dazguls-projects.vercel.app/"
+        "demo": "https://blog-app-client-black-omega.vercel.app/"
     },
     {
         "id": 9,
