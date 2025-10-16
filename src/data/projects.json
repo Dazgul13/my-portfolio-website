@@ -10,27 +10,27 @@
     },
     {
         "id": 2,
-        "title": "Course Booking API Documentation",
-        "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.",
-        "image": "/images/myProjects/2_project.svg",
-        "github": "",
-        "demo": ""
-    },
-    {
-        "id": 3,
-        "title": "Course booking App",
-        "description": "A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.",
-        "image": "/images/myProjects/3_project.svg",
-        "github": "",
-        "demo": ""
-    },
-    {
-        "id": 4,
         "title": "E-commerce App",
         "description": "MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.",
         "image": "/images/myProjects/4_project.svg",
         "github": "https://github.com/Dazgul13/e-commerce-client",
         "demo": "http://zuitt-bootcamp-prod-571-9096-espinosa.s3-website.us-east-1.amazonaws.com/"
+    },
+    {
+        "id": 3,
+        "title": "Blog App Client Demo",
+        "description": "The Blog App Client Demo provides an interactive preview of a modern blogging platform’s frontend interface, designed for both readers and content creators. This demo highlights the app’s usability, design, and core features.",
+        "image": "/images/myProjects/8_project.svg",
+        "github": "https://github.com/Dazgul13/blog-app-client",
+        "demo": "https://blog-app-client-black-omega.vercel.app/"
+    },
+    {
+        "id": 4,
+        "title": "Job Tracker Client Demo",
+        "description": "The Job Tracker App Client Demo showcases an intuitive and user-friendly interface designed to help job seekers efficiently manage their job applications in one centralized platform. This demo provides a hands-on experience of the core features and workflows available in the full application.",
+        "image": "/images/myProjects/JobAPP.jpg",
+        "github": "https://github.com/Dazgul13/job-tracker-client",
+        "demo": "https://job-tracker-client-git-master-dazguls-projects.vercel.app/"
     },
     {
         "id": 5,
@@ -41,36 +41,37 @@
         "demo": "job-tracker-api-0m4s.onrender.com/"
     },
     {
-        "id": 6,
-        "title": "Job Tracker Client Demo",
-        "description": "The Job Tracker App Client Demo showcases an intuitive and user-friendly interface designed to help job seekers efficiently manage their job applications in one centralized platform. This demo provides a hands-on experience of the core features and workflows available in the full application.",
-        "image": "/images/myProjects/JobAPP.jpg",
-        "github": "https://github.com/Dazgul13/job-tracker-client",
-        "demo": "https://job-tracker-client-git-master-dazguls-projects.vercel.app/"
-    },
-    {
-        "id": 7,
+        "id": 76,
         "title": "Blog App API",
         "description": "The Blog App API offers a robust and flexible backend service to manage blog content efficiently. It enables developers to create, retrieve, update, and delete blog posts, manage user comments, and handle user authentication seamlessly.",
         "image": "/images/myProjects/7_project.svg",
         "github": "https://github.com/Dazgul13/blog-app-API",
         "demo": "blog-app-api-7nxz.onrender.com"
     },
+    
     {
-        "id": 8,
-        "title": "Blog App Client Demo",
-        "description": "The Blog App Client Demo provides an interactive preview of a modern blogging platform’s frontend interface, designed for both readers and content creators. This demo highlights the app’s usability, design, and core features.",
-        "image": "/images/myProjects/8_project.svg",
-        "github": "https://github.com/Dazgul13/blog-app-client",
-        "demo": "https://blog-app-client-black-omega.vercel.app/"
-    },
-    {
-        "id": 9,
+        "id": 7,
         "title": "Static HTML Coffee Roasters Page",
         "description": "TThe Coffee Roasters Page is a beautifully designed web page dedicated to showcasing a coffee roasting business. It highlights the company’s story, roasting process, product offerings, and commitment to quality, providing visitors with an engaging and informative experience.",
         "image": "/images/myProjects/9_project.svg",
         "github": "https://github.com/Dazgul13/conyocoffeeroasters",
         "demo": "https://dazgul13.github.io/conyocoffeeroasters/"
+    },
+    {
+        "id": 8,
+        "title": "Course Booking API Documentation",
+        "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.",
+        "image": "/images/myProjects/2_project.svg",
+        "github": "",
+        "demo": ""
+    },
+    {
+        "id": 9,
+        "title": "Course booking App",
+        "description": "A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.",
+        "image": "/images/myProjects/3_project.svg",
+        "github": "",
+        "demo": ""
     },
     {
         "id": 10,
