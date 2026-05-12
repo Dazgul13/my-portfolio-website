@@ -1,24 +1,22 @@
 <template>
-  <nav class="navbar navbar-expand-lg sticky-top" id="navbar" :class="{ 'scrolled': isScrolled }">
+  <nav id="navbar" :class="{ scrolled: isScrolled }">
     <div class="container">
-      <a class="navbar-brand" href="#landing">Full Stack Developer Portfolio</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">My Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      <div class="nav-inner">
+        <a href="#landing" class="nav-brand">Arjuna Das Espinosa</a>
+
+        <button class="nav-toggle" @click="menuOpen = !menuOpen" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" :class="{ open: menuOpen }">
+          <li><a href="#about" @click="menuOpen = false">About</a></li>
+          <li><a href="#projects" @click="menuOpen = false">Projects</a></li>
+          <li><a href="#certifications" @click="menuOpen = false">Certifications</a></li>
+          <li><a href="#skills" @click="menuOpen = false">Skills</a></li>
+          <li><a href="#timeline" @click="menuOpen = false">Timeline</a></li>
+          <li><a href="#contact" @click="menuOpen = false">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -27,10 +25,11 @@
 
 <script>
 export default {
-  name: "Navbar",
+  name: 'Navbar',
   data() {
     return {
-      isScrolled: false
+      isScrolled: false,
+      menuOpen: false,
     };
   },
   mounted() {
@@ -42,7 +41,7 @@ export default {
   methods: {
     handleScroll() {
       this.isScrolled = window.scrollY > 50;
-    }
-  }
+    },
+  },
 };
 </script>

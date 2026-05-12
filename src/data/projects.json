@@ -1,101 +1,108 @@
-
 [
-    {  
-        "id": 1,
-        "title": "E-commerce API Documentation",
-        "description": "Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management.\n Documented Backend API published publicly using Postman.",
-        "image": "/images/myProjects/1_project.svg",
-        "github": "https://github.com/Dazgul13/e-commerce-API",
-        "demo": "https://documenter.getpostman.com/view/46337989/2sB3QDuXYx"
-    },
-    {
-        "id": 2,
-        "title": "E-commerce App",
-        "description": "MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.",
-        "image": "/images/myProjects/4_project.svg",
-        "github": "https://github.com/Dazgul13/e-commerce-client",
-        "demo": "http://zuitt-bootcamp-prod-571-9096-espinosa.s3-website.us-east-1.amazonaws.com/"
-    },
-    {
-        "id": 3,
-        "title": "Blog App Client Demo",
-        "description": "The Blog App Client Demo provides an interactive preview of a modern blogging platform’s frontend interface, designed for both readers and content creators. This demo highlights the app’s usability, design, and core features.",
-        "image": "/images/myProjects/8_project.svg",
-        "github": "https://github.com/Dazgul13/blog-app-client",
-        "demo": "https://blog-app-client-black-omega.vercel.app/"
-    },
-    {
-        "id": 4,
-        "title": "Job Tracker Client Demo",
-        "description": "The Job Tracker App Client Demo showcases an intuitive and user-friendly interface designed to help job seekers efficiently manage their job applications in one centralized platform. This demo provides a hands-on experience of the core features and workflows available in the full application.",
-        "image": "/images/myProjects/JobAPP.jpg",
-        "github": "https://github.com/Dazgul13/job-tracker-client",
-        "demo": "https://job-tracker-client-git-master-dazguls-projects.vercel.app/"
-    },
-    {
-        "id": 5,
-        "title": "Job Tracker API",
-        "description": "The Job Tracker API provides a comprehensive set of endpoints to manage and monitor job applications efficiently. This API allows developers and users to create, update, retrieve, and delete job application records, track their statuses, and organize job search activities in a streamlined manner.",
-        "image": "/images/myProjects/JobAPI.jpg",
-        "github": "https://github.com/Dazgul13/job-tracker-API",
-        "demo": "job-tracker-api-0m4s.onrender.com/"
-    },
-    {
-        "id": 76,
-        "title": "Blog App API",
-        "description": "The Blog App API offers a robust and flexible backend service to manage blog content efficiently. It enables developers to create, retrieve, update, and delete blog posts, manage user comments, and handle user authentication seamlessly.",
-        "image": "/images/myProjects/7_project.svg",
-        "github": "https://github.com/Dazgul13/blog-app-API",
-        "demo": "blog-app-api-7nxz.onrender.com"
-    },
-    
-    {
-        "id": 7,
-        "title": "Static HTML Coffee Roasters Page",
-        "description": "TThe Coffee Roasters Page is a beautifully designed web page dedicated to showcasing a coffee roasting business. It highlights the company’s story, roasting process, product offerings, and commitment to quality, providing visitors with an engaging and informative experience.",
-        "image": "/images/myProjects/9_project.svg",
-        "github": "https://github.com/Dazgul13/conyocoffeeroasters",
-        "demo": "https://dazgul13.github.io/conyocoffeeroasters/"
-    },
-    {
-        "id": 8,
-        "title": "Course Booking API Documentation",
-        "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.",
-        "image": "/images/myProjects/2_project.svg",
-        "github": "",
-        "demo": ""
-    },
-    {
-        "id": 9,
-        "title": "Course booking App",
-        "description": "A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.",
-        "image": "/images/myProjects/3_project.svg",
-        "github": "",
-        "demo": ""
-    },
-    {
-        "id": 10,
-        "title": "WIP",
-        "description": "This project is a work in progress comeback another time to view the finished project",
-        "image": "/images/myProjects/9_project.svg",
-        "github": "",
-        "demo": ""
-    },
-    {
-        "id": 11,
-        "title": "WIP",
-        "description": "This project is a work in progress comeback another time to view the finished project",
-        "image": "/images/myProjects/9_project.svg",
-        "github": "",
-        "demo": ""
-    },
-    {
-        "id": 12,
-        "title": "WIP",
-        "description": "This project is a work in progress comeback another time to view the finished project",
-        "image": "/images/myProjects/9_project.svg",
-        "github": "",
-        "demo": ""
-    }
-
+  {
+    "id": 10,
+    "featured": true,
+    "type": "Full-Stack · MERN",
+    "title": "Dental Clinic Management System",
+    "description": "A multi-tenant MERN application for managing dental clinic patients, appointments, and medical records. Features an interactive dental chart with FDI notation, role-based access (admin/staff), appointment scheduling, and complete data isolation per clinic.",
+    "image": "/images/myProjects/dental_clinic.svg",
+    "tags": ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS"],
+    "github": "https://github.com/Dazgul13/dental-clinic-app",
+    "demo": ""
+  },
+  {
+    "id": 3,
+    "featured": true,
+    "type": "Full-Stack · Frontend",
+    "title": "Blog App",
+    "description": "A modern blogging platform's frontend interface designed for both readers and content creators. Highlights the app's usability, design, and core features with a clean, responsive UI.",
+    "image": "/images/myProjects/8_project.svg",
+    "tags": ["Vue.js", "Node.js", "Express.js", "MongoDB"],
+    "github": "https://github.com/Dazgul13/blog-app-client",
+    "demo": "https://blog-app-client-black-omega.vercel.app/"
+  },
+  {
+    "id": 2,
+    "featured": true,
+    "type": "Full-Stack",
+    "title": "E-commerce App",
+    "description": "MERN E-Commerce Platform featuring dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics.",
+    "image": "/images/myProjects/4_project.svg",
+    "tags": ["MongoDB", "Express.js", "React", "Node.js"],
+    "github": "https://github.com/Dazgul13/e-commerce-client",
+    "demo": "http://zuitt-bootcamp-prod-571-9096-espinosa.s3-website.us-east-1.amazonaws.com/"
+  },
+  {
+    "id": 1,
+    "featured": true,
+    "type": "Full-Stack · API",
+    "title": "E-commerce API Documentation",
+    "description": "Dynamic E-Commerce Workflow Management with dynamic routes for order processing, real-time inventory updates, and secure user authentication. Documented Backend API published publicly using Postman.",
+    "image": "/images/myProjects/1_project.svg",
+    "tags": ["Node.js", "Express.js", "MongoDB", "Postman"],
+    "github": "https://github.com/Dazgul13/e-commerce-API",
+    "demo": "https://documenter.getpostman.com/view/46337989/2sB3QDuXYx"
+  },
+  {
+    "id": 4,
+    "featured": true,
+    "type": "Full-Stack",
+    "title": "Job Tracker App",
+    "description": "An intuitive platform designed to help job seekers efficiently manage their job applications in one centralized place. Features a clean dashboard, status tracking, and a RESTful API backend.",
+    "image": "/images/myProjects/JobAPP.svg",
+    "tags": ["Vue.js", "Node.js", "Express.js", "MongoDB"],
+    "github": "https://github.com/Dazgul13/job-tracker-client",
+    "demo": "https://job-tracker-client-git-master-dazguls-projects.vercel.app/"
+  },
+  {
+    "id": 5,
+    "featured": false,
+    "title": "Job Tracker API",
+    "description": "RESTful API providing comprehensive endpoints to manage and monitor job applications — create, update, retrieve, and delete records with status tracking.",
+    "image": "/images/myProjects/JobAPI.svg",
+    "tags": ["Node.js", "Express.js", "MongoDB"],
+    "github": "https://github.com/Dazgul13/job-tracker-API",
+    "demo": ""
+  },
+  {
+    "id": 6,
+    "featured": false,
+    "title": "Blog App API",
+    "description": "Robust backend service to manage blog content — create, retrieve, update, and delete blog posts, manage user comments, and handle user authentication seamlessly.",
+    "image": "/images/myProjects/7_project.svg",
+    "tags": ["Node.js", "Express.js", "MongoDB"],
+    "github": "https://github.com/Dazgul13/blog-app-API",
+    "demo": ""
+  },
+  {
+    "id": 7,
+    "featured": true,
+    "type": "Frontend · Static",
+    "title": "Coffee Roasters Page",
+    "description": "A beautifully designed static HTML page for a coffee roasting business, highlighting the company's story, roasting process, and product offerings.",
+    "image": "/images/myProjects/9_project.svg",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Dazgul13/conyocoffeeroasters",
+    "demo": "https://dazgul13.github.io/conyocoffeeroasters/"
+  },
+  {
+    "id": 8,
+    "featured": false,
+    "title": "Course Booking API",
+    "description": "RESTful API for managing course enrollments — user registration, authentication, course creation, updates, archiving, activation, and student enrollment. Documented with Postman.",
+    "image": "/images/myProjects/2_project.svg",
+    "tags": ["Node.js", "Express.js", "MongoDB", "Postman"],
+    "github": "",
+    "demo": ""
+  },
+  {
+    "id": 9,
+    "featured": false,
+    "title": "Course Booking App",
+    "description": "A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses.",
+    "image": "/images/myProjects/3_project.svg",
+    "tags": ["MongoDB", "Express.js", "React", "Node.js"],
+    "github": "",
+    "demo": ""
+  }
 ]

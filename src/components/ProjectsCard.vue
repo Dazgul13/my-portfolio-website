@@ -1,77 +1,43 @@
-<script setup>
-import { defineProps } from 'vue';
-
-defineProps({
-  project: Object,
-});
-</script>
-
 <template>
   <div class="project-card">
     <img
       :src="project.image"
-      class="project-img"
       :alt="project.title"
+      class="project-card-img"
     />
-    <div class="card-body">
-      <h3 class="card-title">{{ project.title }}</h3>
-      <p class="card-text">{{ project.description }}</p>
-      <div class="card-actions">
-        <a :href="project.github" target="_blank" class="btn btn-outline-light btn-sm me-2">
-          <i class="fab fa-github"></i> GitHub
+    <div class="project-card-body">
+      <div v-if="project.type" class="project-card-meta">{{ project.type }}</div>
+      <h3 class="project-card-title">{{ project.title }}</h3>
+      <p class="project-card-desc">{{ project.description }}</p>
+      <div v-if="project.tags && project.tags.length" class="project-tags">
+        <span v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</span>
+      </div>
+      <div class="project-card-links">
+        <a
+          v-if="project.github"
+          :href="project.github"
+          target="_blank"
+          rel="noopener"
+          class="project-link"
+        >
+          <i class="fab fa-github"></i> Source Code
         </a>
-        <a :href="project.demo" target="_blank" class="btn btn-outline-light btn-sm">
-          <i class="fas fa-external-link-alt"></i> Demo
+        <a
+          v-if="project.demo"
+          :href="project.demo"
+          target="_blank"
+          rel="noopener"
+          class="project-link"
+        >
+          <i class="fas fa-external-link-alt"></i> Live Demo
         </a>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped>
-.project-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-}
-
-.card-text {
-  flex-grow: 1;
-  margin-bottom: 1rem;
-}
-
-.card-actions {
-  margin-top: auto;
-}
-
-.btn-outline-light {
-  border-color: var(--button-color);
-  color: var(--button-color);
-}
-
-.btn-outline-light:hover {
-  background-color: var(--button-color);
-  color: var(--button-text-color);
-}
-
-.fab, .fas {
-  color: var(--icon-color);
-}
-</style>
+<script setup>
+defineProps({
+  project: Object,
+});
+</script>

@@ -1,51 +1,60 @@
 <template>
-    <!-- My Projects Section -->
-    <section class="pb-5" id="projects">
-        <!-- Section Heading -->
-        <h1 class="mt-5 mb-5 pb-4 text-center">My Projects</h1>
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A selection of my recent work and personal projects.</p>
 
-        <div class="row">
-            <div
-                v-for="project in paginatedProjects"
-                :key="project.id"
-                class="col-12 col-md-6 col-lg-4 mb-4"
+      <!-- Featured Projects Grid -->
+      <div class="projects-featured-grid">
+        <ProjectCard
+          v-for="project in featuredProjects"
+          :key="project.id"
+          :project="project"
+        />
+      </div>
+
+      <!-- Other Projects -->
+      <div class="other-projects-title">Other Projects</div>
+      <div class="other-projects-grid">
+        <div
+          v-for="project in otherProjects"
+          :key="project.id"
+          class="other-project-card"
+        >
+          <div class="other-project-name">{{ project.title }}</div>
+          <div class="other-project-desc">{{ project.description }}</div>
+          <div class="other-project-links">
+            <a
+              v-if="project.github"
+              :href="project.github"
+              target="_blank"
+              rel="noopener"
+              class="other-project-link"
             >
-                <ProjectCard :project="project" />
-            </div>
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a
+              v-if="project.demo"
+              :href="project.demo"
+              target="_blank"
+              rel="noopener"
+              class="other-project-link"
+            >
+              <i class="fas fa-external-link-alt"></i> Demo
+            </a>
+          </div>
         </div>
-        <div v-if="totalPages > 1" class="pagination d-flex justify-content-center mt-4">
-            <button @click="prevPage" :disabled="currentPage === 1" class="btn btn-primary me-2">Previous</button>
-            <span class="align-self-center mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
-            <button @click="nextPage" :disabled="currentPage === totalPages" class="btn btn-primary ms-2">Next</button>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
 import ProjectCard from './ProjectsCard.vue';
 import projects from '../data/projects.json';
 
-const currentPage = ref(1);
-const projectsPerPage = 9;
-
-const paginatedProjects = computed(() => {
-  const start = (currentPage.value - 1) * projectsPerPage;
-  const end = start + projectsPerPage;
-  return projects.slice(start, end);
-});
-
-const totalPages = computed(() => Math.ceil(projects.length / projectsPerPage));
-
-function nextPage() {
-  if (currentPage.value < totalPages.value) {
-    currentPage.value++;
-  }
-}
-
-function prevPage() {
-  if (currentPage.value > 1) {
-    currentPage.value--;
-  }
-}
+// First 4 are featured, rest are "other"
+const featuredProjects = projects.filter(p => p.featured);
+const otherProjects = projects.filter(p => !p.featured);
 </script>

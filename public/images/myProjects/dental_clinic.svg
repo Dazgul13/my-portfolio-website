@@ -1,0 +1,112 @@
+<svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1117"/>
+      <stop offset="100%" style="stop-color:#1a1d27"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" fill="url(#bg)"/>
+
+  <!-- Browser chrome -->
+  <rect x="60" y="30" width="680" height="360" rx="10" fill="#1e2130" stroke="#2d3148" stroke-width="1.5"/>
+  <rect x="60" y="30" width="680" height="38" rx="10" fill="#252840"/>
+  <rect x="60" y="50" width="680" height="18" fill="#252840"/>
+  <circle cx="88" cy="49" r="6" fill="#ff5f57"/>
+  <circle cx="108" cy="49" r="6" fill="#febc2e"/>
+  <circle cx="128" cy="49" r="6" fill="#28c840"/>
+  <rect x="160" y="39" width="380" height="20" rx="10" fill="#1a1d2e"/>
+  <text x="350" y="53" font-family="monospace" font-size="10" fill="#555" text-anchor="middle">dental-clinic.vercel.app/dashboard</text>
+
+  <!-- Sidebar -->
+  <rect x="60" y="68" width="155" height="322" fill="#13151f"/>
+  <text x="88" y="96" font-family="sans-serif" font-size="12" fill="#7c8cf8" font-weight="bold">🦷 DentalCare</text>
+  <text x="78" y="116" font-family="sans-serif" font-size="9" fill="#555">BRIGHT SMILES CLINIC</text>
+  <line x1="68" y1="122" x2="207" y2="122" stroke="#2d3148" stroke-width="1"/>
+  <rect x="68" y="128" width="139" height="24" rx="4" fill="#252840"/>
+  <text x="84" y="144" font-family="sans-serif" font-size="10" fill="#ccc">📊  Dashboard</text>
+  <text x="84" y="168" font-family="sans-serif" font-size="10" fill="#555">👥  Patients</text>
+  <text x="84" y="192" font-family="sans-serif" font-size="10" fill="#555">📅  Schedule</text>
+  <text x="84" y="216" font-family="sans-serif" font-size="10" fill="#555">🦷  Dental Chart</text>
+  <text x="84" y="240" font-family="sans-serif" font-size="10" fill="#555">⚙️  Settings</text>
+  <rect x="68" y="350" width="139" height="24" rx="4" fill="#1a1d2e"/>
+  <text x="84" y="366" font-family="sans-serif" font-size="9" fill="#888">Admin · Dr. Arjuna</text>
+
+  <!-- Stats row -->
+  <rect x="228" y="76" width="118" height="56" rx="6" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <text x="287" y="100" font-family="sans-serif" font-size="20" fill="#7c8cf8" text-anchor="middle" font-weight="bold">142</text>
+  <text x="287" y="118" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">Total Patients</text>
+
+  <rect x="356" y="76" width="118" height="56" rx="6" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <text x="415" y="100" font-family="sans-serif" font-size="20" fill="#28c840" text-anchor="middle" font-weight="bold">8</text>
+  <text x="415" y="118" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">Today's Appts</text>
+
+  <rect x="484" y="76" width="118" height="56" rx="6" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <text x="543" y="100" font-family="sans-serif" font-size="20" fill="#f9c74f" text-anchor="middle" font-weight="bold">3</text>
+  <text x="543" y="118" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">Pending</text>
+
+  <rect x="612" y="76" width="116" height="56" rx="6" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <text x="670" y="100" font-family="sans-serif" font-size="20" fill="#ff5f57" text-anchor="middle" font-weight="bold">1</text>
+  <text x="670" y="118" font-family="sans-serif" font-size="9" fill="#888" text-anchor="middle">Cancelled</text>
+
+  <!-- Today's appointments -->
+  <text x="232" y="154" font-family="sans-serif" font-size="10" fill="#888" font-weight="bold">TODAY'S APPOINTMENTS</text>
+  <rect x="228" y="160" width="500" height="26" rx="3" fill="#252840"/>
+  <text x="240" y="177" font-family="sans-serif" font-size="9" fill="#888">Patient</text>
+  <text x="370" y="177" font-family="sans-serif" font-size="9" fill="#888">Procedure</text>
+  <text x="530" y="177" font-family="sans-serif" font-size="9" fill="#888">Time</text>
+  <text x="640" y="177" font-family="sans-serif" font-size="9" fill="#888">Status</text>
+
+  <rect x="228" y="192" width="500" height="28" rx="2" fill="#13151f"/>
+  <text x="240" y="210" font-family="sans-serif" font-size="10" fill="#ccc">Maria Santos</text>
+  <text x="370" y="210" font-family="sans-serif" font-size="10" fill="#ccc">Cleaning</text>
+  <text x="530" y="210" font-family="sans-serif" font-size="10" fill="#ccc">9:00 AM</text>
+  <rect x="628" y="199" width="64" height="14" rx="7" fill="#28c840" opacity="0.2"/>
+  <text x="660" y="210" font-family="sans-serif" font-size="9" fill="#28c840" text-anchor="middle">Confirmed</text>
+
+  <rect x="228" y="226" width="500" height="28" rx="2" fill="#1a1d2e"/>
+  <text x="240" y="244" font-family="sans-serif" font-size="10" fill="#ccc">Juan dela Cruz</text>
+  <text x="370" y="244" font-family="sans-serif" font-size="10" fill="#ccc">Extraction</text>
+  <text x="530" y="244" font-family="sans-serif" font-size="10" fill="#ccc">10:30 AM</text>
+  <rect x="628" y="233" width="64" height="14" rx="7" fill="#f9c74f" opacity="0.2"/>
+  <text x="660" y="244" font-family="sans-serif" font-size="9" fill="#f9c74f" text-anchor="middle">Pending</text>
+
+  <rect x="228" y="260" width="500" height="28" rx="2" fill="#13151f"/>
+  <text x="240" y="278" font-family="sans-serif" font-size="10" fill="#ccc">Ana Reyes</text>
+  <text x="370" y="278" font-family="sans-serif" font-size="10" fill="#ccc">Braces Check</text>
+  <text x="530" y="278" font-family="sans-serif" font-size="10" fill="#ccc">1:00 PM</text>
+  <rect x="628" y="267" width="64" height="14" rx="7" fill="#28c840" opacity="0.2"/>
+  <text x="660" y="278" font-family="sans-serif" font-size="9" fill="#28c840" text-anchor="middle">Confirmed</text>
+
+  <!-- Dental chart preview -->
+  <text x="232" y="312" font-family="sans-serif" font-size="10" fill="#888" font-weight="bold">DENTAL CHART — FDI NOTATION</text>
+  <rect x="228" y="318" width="500" height="60" rx="4" fill="#13151f" stroke="#2d3148" stroke-width="1"/>
+  <!-- Upper teeth row -->
+  <text x="248" y="338" font-family="monospace" font-size="8" fill="#555">18  17  16  15  14  13  12  11 | 21  22  23  24  25  26  27  28</text>
+  <!-- Tooth boxes upper -->
+  <rect x="248" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="262" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="276" y="342" width="10" height="10" rx="1" fill="#ff5f57" stroke="#ff5f57" stroke-width="1" opacity="0.7"/>
+  <rect x="290" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="304" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="318" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="332" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="346" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <line x1="362" y1="340" x2="362" y2="354" stroke="#2d3148" stroke-width="1"/>
+  <rect x="366" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="380" y="342" width="10" height="10" rx="1" fill="#f9c74f" stroke="#f9c74f" stroke-width="1" opacity="0.7"/>
+  <rect x="394" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="408" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="422" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="436" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="450" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <rect x="464" y="342" width="10" height="10" rx="1" fill="#1a1d2e" stroke="#2d3148" stroke-width="1"/>
+  <!-- Legend -->
+  <rect x="510" y="340" width="8" height="8" rx="1" fill="#ff5f57" opacity="0.7"/>
+  <text x="522" y="348" font-family="sans-serif" font-size="8" fill="#888">Cavity</text>
+  <rect x="560" y="340" width="8" height="8" rx="1" fill="#f9c74f" opacity="0.7"/>
+  <text x="572" y="348" font-family="sans-serif" font-size="8" fill="#888">Filling</text>
+  <rect x="610" y="340" width="8" height="8" rx="1" fill="#28c840" opacity="0.7"/>
+  <text x="622" y="348" font-family="sans-serif" font-size="8" fill="#888">Healthy</text>
+  <!-- Lower teeth row -->
+  <text x="248" y="368" font-family="monospace" font-size="8" fill="#555">48  47  46  45  44  43  42  41 | 31  32  33  34  35  36  37  38</text>
+</svg>

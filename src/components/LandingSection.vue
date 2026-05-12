@@ -1,20 +1,38 @@
 <template>
-  <section id="landing" class="hero py-5 hero-section-bg">
+  <section id="landing">
     <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex justify-content-center">
-          <img
-            src="/images/me.jpg"
-            alt="Developer Illustration"
-            class="img-fluid rounded-circle"
-          />
-        </div>
-        <div class="col-12 col-md-8 text-center text-md-start">
-          <h1 class="display-4 fw-bold text-darker">Hi, I'm Arjuna Das Espinosa</h1>
-          <p class="lead text-darker">
-            Full Stack Web Developer passionate about building scalable web applications and interactive user experiences.
+      <div class="hero-inner">
+        <div class="hero-text-block">
+          <div class="hero-greeting">Hi, my name is</div>
+          <h1 class="hero-name">
+            <span>ARJUNA DAS</span>
+            <span>ESPINOSA</span>
+          </h1>
+          <div class="hero-role">Full-Stack Web Developer</div>
+          <p class="hero-desc">
+            Detail-oriented and adaptable Full-Stack Web Developer with certifications in
+            Front-End, Back-End, and Full-Stack Development. Strong foundation in algorithms,
+            data structures, and coding logic — building real-world web applications that
+            connect technical solutions with real business impact.
           </p>
-          <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              View My Work
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              Get In Touch
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <div class="hero-scroll">
+            <div class="hero-scroll-line"></div>
+            <span>Scroll</span>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img src="/images/me.jpg" alt="Arjuna Das Espinosa" />
         </div>
       </div>
     </div>
@@ -22,5 +40,7 @@
 </template>
 
 <script>
-
+export default {
+  name: 'LandingSection',
+};
 </script>

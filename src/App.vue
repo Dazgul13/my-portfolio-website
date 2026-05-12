@@ -3,23 +3,33 @@ import Navbar from './components/Navbar.vue';
 import LandingSection from './components/LandingSection.vue';
 import AboutSection from './components/AboutSection.vue';
 import Projects from './components/Projects.vue';
-import ToolsSection from './components/ToolsSection.vue';
+import Certifications from './components/Certifications.vue';
+import SkillsSection from './components/SkillsSection.vue';
+import Timeline from './components/Timeline.vue';
+import References from './components/References.vue';
 import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 </script>
 
 <template>
   <Navbar />
-  <div class="container-fluid">
+  <main>
     <LandingSection />
     <AboutSection />
     <Projects />
-    <ToolsSection />
+    <Certifications />
+    <SkillsSection />
+    <Timeline />
+    <References />
     <Contact />
-    <Footer />
-  </div>
+  </main>
+  <Footer />
 </template>
 
-<style scoped>
-/* Add scoped styles here if needed */
+<style>
+/* Remove default body margin/padding that Bootstrap may have added */
+body {
+  margin: 0;
+  padding: 0;
+}
 </style>

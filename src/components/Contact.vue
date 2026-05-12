@@ -1,176 +1,156 @@
 <template>
   <section id="contact">
     <div class="container">
-      <h2 class="section-title text-center mb-5">Contact Me</h2>
-      <div class="row justify-content-center">
-        <!-- Map -->
-        <div class="col-md-6 map-container mb-4 mb-md-0">
-          <iframe
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=centro%20escolar%20university%20manila&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact-inner">
+        <!-- Left: info -->
+        <div class="contact-info">
+          <p>
+            I'm currently open to new opportunities. Whether you have a project in mind,
+            a question, or just want to say hi — my inbox is always open.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:arjuna.espinosa13@gmail.com" class="contact-link-item">
+              <i class="fas fa-envelope"></i>
+              arjuna.espinosa13@gmail.com
+            </a>
+            <a href="tel:+639179853505" class="contact-link-item">
+              <i class="fas fa-phone"></i>
+              (+63) 917 985 3505
+            </a>
+            <a href="https://github.com/Dazgul13" target="_blank" rel="noopener" class="contact-link-item">
+              <i class="fab fa-github"></i>
+              github.com/Dazgul13
+            </a>
+            <a href="https://www.linkedin.com/in/arjuna-das-espinosa-8725a8238" target="_blank" rel="noopener" class="contact-link-item">
+              <i class="fab fa-linkedin"></i>
+              linkedin.com/in/arjuna-das-espinosa
+            </a>
+          </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="col-md-6">
-          <form @submit.prevent="submitForm" class="contact-form">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                v-model="form.name"
-                placeholder="Your name"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                v-model="form.email"
-                placeholder="name@example.com"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                class="form-control"
-                id="message"
-                rows="4"
-                v-model="form.message"
-                placeholder="Write your message here..."
-                required
-              ></textarea>
-            </div>
+        <!-- Right: form -->
+        <form class="contact-form" @submit.prevent="submitForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              v-model="form.name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              v-model="form.email"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              v-model="form.message"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
 
-            
+          <div class="recaptcha-wrap">
+            <div ref="recaptchaContainer"></div>
+          </div>
 
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary w-100">
-              {{ isLoading ? "Sending..." : "Send Message" }}
-            </button>
-            <!-- reCAPTCHA -->
-            <div class="d-flex justify-content-end mb-3">
-              <div ref="recaptchaContainer"></div>
-            </div>
-
-          </form>
-
-        </div>
+          <button type="submit" class="form-submit" :disabled="isLoading">
+            {{ isLoading ? 'Sending...' : 'Send Message' }}
+          </button>
+        </form>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import { ref, onMounted, onBeforeUnmount } from "vue";
-import { Notyf } from "notyf";
-import "notyf/notyf.min.css";
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { Notyf } from 'notyf';
+import 'notyf/notyf.min.css';
 
 const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 export default {
-  name: "ContactSection",
+  name: 'ContactSection',
   setup() {
     const notyf = new Notyf();
-    const form = ref({
-      name: "",
-      email: "",
-      message: "",
-    });
+    const form = ref({ name: '', email: '', message: '' });
     const isLoading = ref(false);
-
-    // reCAPTCHA
     const recaptchaContainer = ref(null);
     const recaptchaWidgetId = ref(null);
-    const recaptchaToken = ref("");
+    const recaptchaToken = ref('');
 
     function onRecaptchaSuccess(token) {
       recaptchaToken.value = token;
     }
 
     function onRecaptchaExpired() {
-      recaptchaToken.value = "";
+      recaptchaToken.value = '';
     }
 
     function renderRecaptcha() {
-      if (!window.grecaptcha) {
-        console.error("reCAPTCHA not loaded");
-        return;
-      }
-      recaptchaWidgetId.value = window.grecaptcha.render(
-        recaptchaContainer.value,
-        {
-          sitekey: SITE_KEY,
-          size: "normal",
-          callback: onRecaptchaSuccess,
-          "expired-callback": onRecaptchaExpired,
-        }
-      );
+      if (!window.grecaptcha) return;
+      recaptchaWidgetId.value = window.grecaptcha.render(recaptchaContainer.value, {
+        sitekey: SITE_KEY,
+        size: 'normal',
+        callback: onRecaptchaSuccess,
+        'expired-callback': onRecaptchaExpired,
+      });
     }
 
     function resetRecaptcha() {
       if (recaptchaWidgetId.value !== null) {
         window.grecaptcha.reset(recaptchaWidgetId.value);
-        recaptchaToken.value = "";
+        recaptchaToken.value = '';
       }
     }
 
-    // Submit handler
     const submitForm = async () => {
       if (!recaptchaToken.value) {
-        notyf.error("Please Verify That You Are Not A Robot.");
+        notyf.error('Please verify that you are not a robot.');
         return;
       }
-
       isLoading.value = true;
-
       try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
             access_key: WEB3FORMS_ACCESS_KEY,
-            subject: "Contact Form Submission from Portfolio Website",
+            subject: 'Contact Form Submission from Portfolio Website',
             name: form.value.name,
             email: form.value.email,
             message: form.value.message,
           }),
         });
-
         const result = await response.json();
-
         if (result.success) {
-          console.log(result);
-          notyf.success("Message Sent!");
-          // Reset form
-          form.value.name = "";
-          form.value.email = "";
-          form.value.message = "";
+          notyf.success('Message sent!');
+          form.value = { name: '', email: '', message: '' };
         }
       } catch (error) {
-        console.error(error);
-        notyf.error("Failed To Send Message");
+        notyf.error('Failed to send message.');
       } finally {
         isLoading.value = false;
         resetRecaptcha();
       }
     };
 
-    // Lifecycle
     onMounted(() => {
       const interval = setInterval(() => {
         if (window.grecaptcha && window.grecaptcha.render) {
@@ -178,54 +158,10 @@ export default {
           clearInterval(interval);
         }
       }, 100);
-
-      onBeforeUnmount(() => {
-        clearInterval(interval);
-      });
+      onBeforeUnmount(() => clearInterval(interval));
     });
 
-    return {
-      form,
-      isLoading,
-      recaptchaContainer,
-      submitForm,
-    };
+    return { form, isLoading, recaptchaContainer, submitForm };
   },
 };
 </script>
-
-<style scoped>
-.contact-form {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 2rem;
-  border-radius: 15px;
-}
-
-.form-control {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  color: var(--text-color);
-}
-
-.form-control::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-control:focus {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 0 0.2rem rgba(24, 192, 181, 0.25);
-}
-
-.map-container {
-  height: 400px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#gmap_canvas {
-  width: 100%;
-  height: 100%;
-}
-</style>
