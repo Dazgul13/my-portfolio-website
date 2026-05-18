@@ -1,4 +1,14 @@
 [
+    {
+    "id": 11,
+    "featured": true,
+    "title": "Dental Clinic Website ",
+    "description": "A modern dental clinic website built to provide patients with easy access to quality oral care services, appointment booking, treatment information, and a comfortable patient experience. With Basic captcha Map, and Contact Form",
+    "image": "/images/myProjects/3_project.svg",
+    "tags": ["MongoDB", "Express.js", "Vue.js", "Node.js"],
+    "github": "https://github.com/Dazgul13/dental-clinic-webpage",
+    "demo": "https://dental-clinic-webpage-ashen.vercel.app/"
+  },
   {
     "id": 10,
     "featured": true,
