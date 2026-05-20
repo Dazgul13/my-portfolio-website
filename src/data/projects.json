@@ -40,7 +40,7 @@
     "image": "/images/myProjects/4_project.svg",
     "tags": ["MongoDB", "Express.js", "React", "Node.js"],
     "github": "https://github.com/Dazgul13/e-commerce-client",
-    "demo": "http://zuitt-bootcamp-prod-571-9096-espinosa.s3-website.us-east-1.amazonaws.com/"
+    "demo": "https://e-commerce-client-brown.vercel.app/"
   },
   {
     "id": 1,
